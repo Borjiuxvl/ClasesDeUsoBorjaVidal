@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+rectangle {
+    (Mostrar menú) as MM
+    (Pedir comida) as PC
+}
+:Cliente: as Cl
+:Restaurante: as Re
+(Entregar comida) as EC
+
+MM -- Re
+Cl -- MM
+Cl -- PC
+Re - EC
+@enduml
